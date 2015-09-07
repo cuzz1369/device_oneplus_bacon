@@ -19,10 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/eos/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/candy5/config/nfc_enhanced.mk)
 
-# Inherit some common EOS stuff.
-$(call inherit-product, vendor/eos/config/common_full_phone.mk)
+# Inherit some common candy5 stuff.
+$(call inherit-product, vendor/candy5/config/common_full_phone.mk)
 
 PRODUCT_NAME := eos_bacon
 PRODUCT_DEVICE := bacon
@@ -43,5 +43,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=oneplus/bacon/A0001:5.0.2/LRX2
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-vendor/eos/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
+vendor/candy5/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
